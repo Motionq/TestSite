@@ -3,54 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forum</title>
-    <!-- Link to Font Awesome CDN -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Forum - Our Forum</title>
     <style>
+        /* Basic styles for the forum page */
         body {
-            background-color: #f0f0f0;
+            background-color: #f4f4f9; /* Light background color */
             font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c3e50; /* Dark header background */
+            color: #fff;
+            padding: 20px;
             text-align: center;
         }
+
         h1 {
-            color: pink;
             font-size: 48px;
         }
-        p {
+
+        .forum-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .forum-container h2 {
+            font-size: 36px;
+            color: #e74c3c;
+        }
+
+        .post-list {
+            margin-top: 30px;
+        }
+
+        .post-item {
+            background-color: #ecf0f1;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-item h3 {
             font-size: 24px;
+            color: #2980b9;
         }
-        .back-icon {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            font-size: 30px;
-            color: #ff69b4;
-            cursor: pointer;
+
+        .post-item p {
+            font-size: 18px;
+            color: #7f8c8d;
         }
-        .button {
-            background-color: #ff69b4;
+
+        .new-post-button {
+            background-color: #3498db;
             color: white;
-            font-size: 24px;
-            padding: 15px 25px;
+            padding: 10px 20px;
             text-decoration: none;
-            border-radius: 10px;
-            display: inline-block;
-            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 30px;
         }
-        .button:hover {
-            background-color: #ff1493;
+
+        .new-post-button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <!-- Icon to go back to the splash page -->
-    <a href="index.html" class="back-icon">
-        <i class="fas fa-home"></i> <!-- Home icon -->
-    </a>
 
-    <h1>Welcome to the Forum</h1>
-    <p>Explore topics, ask questions, and share your thoughts!</p>
-    <!-- Forum content goes here -->
-    <a href="forum.html" class="button">Start Exploring</a>
+    <!-- Header -->
+    <header>
+        <h1>Our Forum</h1>
+    </header>
+
+    <!-- Forum Content -->
+    <section class="forum-container">
+        <h2>Latest Discussions</h2>
+
+        <!-- New Post Button -->
+        <a href="#" class="new-post-button">Create a New Post</a>
+
+        <!-- List of Forum Posts -->
+        <div class="post-list">
+            <div class="post-item">
+                <h3>Welcome to the forum!</h3>
+                <p>This is where you can introduce yourself and ask your first question!</p>
+            </div>
+
+            <div class="post-item">
+                <h3>General Discussion: Favorite Movies</h3>
+                <p>What are your favorite movies and why? Let's discuss!</p>
+            </div>
+
+            <div class="post-item">
+                <h3>Tech Talk: Future of AI</h3>
+                <p>Share your thoughts on the future of AI and its impact on society.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Our Forum. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
