@@ -48,6 +48,11 @@
       background-color: #444;
     }
 
+    /* Vertical Separator */
+    .navbar a:not(:last-child) {
+      border-right: 1px solid #444;
+    }
+
     /* Dropdown */
     .dropdown {
       position: relative;
@@ -58,7 +63,7 @@
       display: none;
       position: absolute;
       background-color: #212121;
-      min-width: 300px;
+      min-width: 250px;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
       z-index: 1;
       border-radius: 6px;
@@ -103,6 +108,9 @@
       text-align: center;
       position: relative;
       border-bottom: 1px solid #444;
+      background-image: url('header-image.jpg'); /* Add the image here */
+      background-size: cover;
+      background-position: center;
     }
 
     .header h1 {
@@ -119,9 +127,15 @@
     /* Employee Section */
     .employee-list {
       margin: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
+    }
+
+    .division {
+      font-size: 1.2rem;
+      color: #e57373;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #444;
+      padding-bottom: 10px;
     }
 
     .employee-card {
@@ -203,7 +217,7 @@
 
   <!-- Employee Section -->
   <section class="employee-list">
-    <!-- Employee Card Example -->
+    <div class="division">Administration</div>
     <div class="employee-card">
       <img src="NYSPHS.png" alt="Officer Image">
       <h3>Officer John Doe</h3>
@@ -214,7 +228,20 @@
       <h3>Officer Jane Smith</h3>
       <p>Rank: Officer</p>
     </div>
-    <!-- Add more employee cards as necessary -->
+
+    <div class="division">Command</div>
+    <div class="employee-card">
+      <img src="NYSPHS.png" alt="Officer Image">
+      <h3>Commander Mark Richards</h3>
+      <p>Rank: Commander</p>
+    </div>
+
+    <div class="division">Supervisor</div>
+    <div class="employee-card">
+      <img src="NYSPHS.png" alt="Officer Image">
+      <h3>Supervisor Greg Miller</h3>
+      <p>Rank: Supervisor</p>
+    </div>
   </section>
 
   <!-- Footer Section -->
