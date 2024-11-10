@@ -84,6 +84,9 @@
       text-align: center;
       font-size: 0.9rem;
       color: #b3b3b3;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
 
     .footer a {
@@ -93,6 +96,19 @@
 
     .footer a:hover {
       text-decoration: underline;
+    }
+
+    /* Custom Positioning */
+    .motionq-profile {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .row-of-profiles {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
     }
   </style>
 </head>
@@ -105,17 +121,28 @@
 
   <!-- Employee Section -->
   <section class="employee-list">
-    <div class="employee">
-        <img src="MotionqSpooky.png" alt="Error"> <!-- Replace with employee's photo -->
+    <div class="motionq-profile">
+      <img src="MotionqSpooky.png" alt="Motionq"> <!-- Replace with employee's photo -->
       <h3>Motionq</h3>
       <p>NYSP | Superintendent</p>
     </div>
-    <div class="employee">
-        <img src="TBD.png" alt="Error"> <!-- Replace with employee's photo -->
-      <h3>TBD</h3>
-      <p>NYSP | First Deputy Superintendent</p>
+    <div class="row-of-profiles">
+      <div class="employee">
+        <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
+        <h3>TBD</h3>
+        <p>NYSP | First Deputy Superintendent</p>
+      </div>
+      <div class="employee">
+        <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
+        <h3>TBD</h3>
+        <p>NYSP | First Deputy Superintendent</p>
+      </div>
+      <div class="employee">
+        <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
+        <h3>TBD</h3>
+        <p>NYSP | First Deputy Superintendent</p>
+      </div>
     </div>
-    <!-- Add more employee cards as needed -->
   </section>
 
   <!-- Footer Section -->
