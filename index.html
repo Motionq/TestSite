@@ -46,21 +46,24 @@
 
     /* Employee Section */
     .employee-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 30px;
-      gap: 20px;
+      padding: 20px;
+    }
+
+    .rank-header {
+      font-size: 1.5rem;
+      color: #f44336;
+      margin: 20px 0;
     }
 
     .employee {
-      width: 200px;
+      width: 150px;
       text-align: center;
       background-color: #1f1f1f;
       border-radius: 10px;
-      padding: 20px;
+      padding: 15px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s;
+      margin-bottom: 20px;
     }
 
     .employee:hover {
@@ -68,26 +71,38 @@
     }
 
     .employee img {
-      width: 100px;
-      height: 100px;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 10px;
     }
 
     .employee h3 {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin: 10px 0 5px;
     }
 
     .employee p {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       color: #b3b3b3;
     }
 
-    /* Red Title for Employee Role - Subtle */
-    .employee p {
-      color: #e57373; /* A subtler red */
+    /* Custom Titles */
+    .superintendent {
+      color: #c62828; /* Superintendent color */
+    }
+
+    .first-deputy {
+      color: #f44336; /* First Deputy Superintendent color */
+    }
+
+    .deputy {
+      color: #ef5350; /* Deputy Superintendent color */
+    }
+
+    .assistant-deputy {
+      color: #e57373; /* Assistant Deputy Superintendent color */
     }
 
     /* Footer Section */
@@ -120,13 +135,13 @@
 
     .row-of-profiles {
       display: flex;
-      justify-content: center;  /* Ensures the profiles are centered */
-      gap: 50px;  /* Reduced gap between profiles */
+      justify-content: center;
+      gap: 30px;
       width: 100%;
     }
 
     .employee-row {
-      flex: 0 0 auto;  /* Keeps the profiles from stretching */
+      flex: 0 0 auto;
       display: flex;
       justify-content: center;
     }
@@ -142,33 +157,35 @@
 
   <!-- Employee Section -->
   <section class="employee-list">
+    <!-- Administration Section -->
+    <h2 class="rank-header">Administration</h2>
     <div class="motionq-profile">
       <div class="employee">
-        <img src="MotionqSpooky.png" alt="Motionq"> <!-- Replace with employee's photo -->
+        <img src="MotionqSpooky.png" alt="Motionq">
         <h3>N. Grant</h3>
-        <p>Superintendent</p>
+        <p class="superintendent">Superintendent</p>
       </div>
     </div>
     <div class="row-of-profiles">
       <div class="employee-row">
         <div class="employee">
-          <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
+          <img src="TBD.png" alt="TBD">
           <h3>TBD</h3>
-          <p>First Deputy Superintendent</p>
+          <p class="first-deputy">First Deputy Superintendent</p>
         </div>
       </div>
       <div class="employee-row">
         <div class="employee">
-          <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
+          <img src="TBD.png" alt="TBD">
           <h3>TBD</h3>
-          <p>Deputy Superintendent</p>
+          <p class="deputy">Deputy Superintendent</p>
         </div>
       </div>
       <div class="employee-row">
         <div class="employee">
-          <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
+          <img src="TBD.png" alt="TBD">
           <h3>TBD</h3>
-          <p>Assistant Deputy Superintendent</p>
+          <p class="assistant-deputy">Assistant Deputy Superintendent</p>
         </div>
       </div>
     </div>
@@ -178,7 +195,7 @@
   <footer class="footer">
     <p>Contact Us: ParodyRP@gmail.com</p>
     <p>&copy; 2024 ParodyRP. All rights reserved.</p>
-    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="https://discord.gg/jsQuJwfShC" target="_blank">Join Our Discord</a> <!-- Discord link added with target="_blank" -->
+    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="https://discord.gg/jsQuJwfShC" target="_blank">Join Our Discord</a>
   </footer>
 
 </body>
