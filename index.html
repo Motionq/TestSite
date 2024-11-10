@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ParodyRP | NYSP</title>
-  <link rel="icon" href="ParodyRP.png"> <!-- Browser Tab Icon -->
+  <link rel="icon" href="ParodyRPLogo.png"> <!-- Browser Tab Icon -->
   <style>
     /* General Reset */
     * {
@@ -73,10 +73,9 @@
       text-align: center;
       background-color: #1f1f1f;
       border-radius: 10px;
-      padding: 25px 15px;  /* Increased padding to extend profile box */
+      padding: 25px 15px 25px 15px;  /* Add padding to top and sides, leave bottom padding unchanged */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       position: relative; /* Added for positioning of the bubble */
-      padding-bottom: 60px; /* Adjusted bottom padding to accommodate the bubble */
     }
 
     .employee img {
@@ -98,8 +97,6 @@
     }
 
     .admin-bubble {
-      position: relative; /* Make the bubble move with the profile */
-      bottom: 0; /* Reset the bubble’s position to be inside the profile */
       background-color: #333;  /* Darker background to match theme */
       color: #f4f4f4;  /* Lighter text for contrast */
       font-weight: bold;
@@ -110,7 +107,7 @@
       display: inline-block;
       text-align: center;
       position: absolute;
-      bottom: 0;  /* Position the bubble inside the profile */
+      bottom: -20px;  /* Adjusted bottom to move the bubble outside the profile */
       left: 50%;
       transform: translateX(-50%); /* Centers the bubble */
     }
