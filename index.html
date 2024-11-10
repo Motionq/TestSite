@@ -22,7 +22,7 @@
 
     /* Header Section */
     .header {
-      background-image: url('header-image.jpg'); /* Replace with your image path */
+      background-image: url('NYSPHeader.jpg'); /* Use the correct image */
       background-size: cover;
       background-position: center;
       height: 250px;
@@ -31,6 +31,7 @@
       justify-content: center;
       color: #ffffff;
       flex-direction: column; /* Stacks the header and subheader */
+      position: relative;
     }
 
     .header h1 {
@@ -40,7 +41,7 @@
 
     .header h2 {
       font-size: 1.5rem;
-      color: #b3b3b3; /* Slightly dimmer color */
+      color: #b3b3b3;
       margin-top: 10px;
     }
 
@@ -49,16 +50,16 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 30px;
+      padding: 20px 30px 10px;  /* Reduced padding */
       gap: 20px;
     }
 
     .employee {
-      width: 200px;
+      width: 160px;  /* Smaller width */
       text-align: center;
       background-color: #1f1f1f;
       border-radius: 10px;
-      padding: 20px;
+      padding: 15px;  /* Reduced padding */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s;
     }
@@ -68,15 +69,15 @@
     }
 
     .employee img {
-      width: 100px;
-      height: 100px;
+      width: 80px;  /* Smaller image */
+      height: 80px;  /* Smaller image */
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 10px;
     }
 
     .employee h3 {
-      font-size: 1.2rem;
+      font-size: 1.1rem;  /* Smaller font size */
       margin: 10px 0 5px;
     }
 
@@ -115,13 +116,13 @@
 
     .row-of-profiles {
       display: flex;
-      justify-content: center;  /* Ensures the profiles are centered */
-      gap: 50px;  /* Reduced gap between profiles */
+      justify-content: center;
+      gap: 50px;
       width: 100%;
     }
 
     .employee-row {
-      flex: 0 0 auto;  /* Keeps the profiles from stretching */
+      flex: 0 0 auto;
       display: flex;
       justify-content: center;
     }
@@ -173,7 +174,7 @@
   <footer class="footer">
     <p>Contact Us: ParodyRP@gmail.com</p>
     <p>&copy; 2024 ParodyRP. All rights reserved.</p>
-    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="https://discord.gg/jsQuJwfShC">Join Our Discord</a> <!-- Discord link added -->
+    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="https://discord.gg/jsQuJwfShC">Join Our Discord</a>
   </footer>
 
 </body>
