@@ -19,7 +19,8 @@
       color: #ffffff;
       font-family: Arial, sans-serif;
       overflow-x: hidden; /* Prevent horizontal scrolling */
-      min-height: 100vh; /* Ensure the body takes up at least the full height */
+      min-height: 100vh; /* Ensure the body height stretches to full viewport height */
+      padding-bottom: 50px; /* Add space for scrolling */
     }
 
     /* Header Section */
@@ -65,9 +66,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 50px 30px 10px;  /* Increased padding to move profiles further down */
+      padding: 50px 30px 20px;  /* Adjusted padding for better scroll */
       gap: 50px;
-      margin-bottom: 100px; /* Added margin to prevent cut-off */
     }
 
     .employee {
@@ -112,6 +112,15 @@
       bottom: -20px;  /* Adjusted bottom to move the bubble outside the profile */
       left: 50%;
       transform: translateX(-50%); /* Centers the bubble */
+    }
+
+    /* Administration and Command text colors */
+    .admin-bubble-administration {
+      background-color: #D64242;  /* Administration text color */
+    }
+
+    .admin-bubble-command {
+      background-color: #E2A03A;  /* Command text color */
     }
 
     /* Footer Section */
@@ -171,7 +180,7 @@
       <img src="MotionqSpooky.png" alt="Motionq">
       <h3>N. Grant</h3>
       <p>Superintendent</p>
-      <div class="admin-bubble">Administration</div> <!-- Separate bubble for Administration -->
+      <div class="admin-bubble admin-bubble-administration">Administration</div> <!-- Separate bubble for Administration -->
     </div>
   </div>
   <div class="row-of-profiles">
@@ -180,7 +189,7 @@
         <img src="TBD.png" alt="TBD">
         <h3>TBD</h3>
         <p>First Deputy Superintendent</p>
-        <div class="admin-bubble">Administration</div> <!-- Separate bubble for Administration -->
+        <div class="admin-bubble admin-bubble-administration">Administration</div> <!-- Separate bubble for Administration -->
       </div>
     </div>
     <div class="employee-row">
@@ -188,7 +197,7 @@
         <img src="TBD.png" alt="TBD">
         <h3>TBD</h3>
         <p>Deputy Superintendent</p>
-        <div class="admin-bubble">Administration</div> <!-- Separate bubble for Administration -->
+        <div class="admin-bubble admin-bubble-administration">Administration</div> <!-- Separate bubble for Administration -->
       </div>
     </div>
     <div class="employee-row">
@@ -196,7 +205,7 @@
         <img src="TBD.png" alt="TBD">
         <h3>TBD</h3>
         <p>Assistant Deputy Superintendent</p>
-        <div class="admin-bubble">Administration</div> <!-- Separate bubble for Administration -->
+        <div class="admin-bubble admin-bubble-administration">Administration</div> <!-- Separate bubble for Administration -->
       </div>
     </div>
   </div>
@@ -206,32 +215,32 @@
       <div class="employee">
         <img src="TBD.png" alt="TBD">
         <h3>TBD</h3>
-        <p>Major</p>
-        <div class="admin-bubble">Command</div>
+        <p>Position</p>
+        <div class="admin-bubble admin-bubble-command">Command</div>
       </div>
     </div>
     <div class="employee-row">
       <div class="employee">
         <img src="TBD.png" alt="TBD">
         <h3>TBD</h3>
-        <p>Captain</p>
-        <div class="admin-bubble">Command</div>
+        <p>Position</p>
+        <div class="admin-bubble admin-bubble-command">Command</div>
       </div>
     </div>
     <div class="employee-row">
       <div class="employee">
         <img src="TBD.png" alt="TBD">
         <h3>TBD</h3>
-        <p>Lieutenant</p>
-        <div class="admin-bubble">Command</div>
+        <p>Position</p>
+        <div class="admin-bubble admin-bubble-command">Command</div>
       </div>
     </div>
     <div class="employee-row">
       <div class="employee">
         <img src="TBD.png" alt="TBD">
         <h3>TBD</h3>
-        <p>Technical Lieutenant</p>
-        <div class="admin-bubble">Command</div>
+        <p>Position</p>
+        <div class="admin-bubble admin-bubble-command">Command</div>
       </div>
     </div>
   </div>
