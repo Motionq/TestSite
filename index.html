@@ -46,24 +46,28 @@
 
     /* Employee Section */
     .employee-list {
-      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      gap: 20px;
     }
 
     .rank-header {
-      font-size: 1.5rem;
+      font-size: 2rem;
       color: #f44336;
-      margin: 20px 0;
+      margin-bottom: 20px;
+      text-align: center;
     }
 
     .employee {
-      width: 150px;
+      width: 160px;
       text-align: center;
       background-color: #1f1f1f;
       border-radius: 10px;
       padding: 15px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s;
-      margin-bottom: 20px;
     }
 
     .employee:hover {
@@ -79,30 +83,29 @@
     }
 
     .employee h3 {
-      font-size: 1rem;
+      font-size: 1.2rem;
       margin: 10px 0 5px;
     }
 
     .employee p {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       color: #b3b3b3;
     }
 
-    /* Custom Titles */
     .superintendent {
-      color: #c62828; /* Superintendent color */
+      color: #c62828;
     }
 
     .first-deputy {
-      color: #f44336; /* First Deputy Superintendent color */
+      color: #f44336;
     }
 
     .deputy {
-      color: #ef5350; /* Deputy Superintendent color */
+      color: #ef5350;
     }
 
     .assistant-deputy {
-      color: #e57373; /* Assistant Deputy Superintendent color */
+      color: #e57373;
     }
 
     /* Footer Section */
@@ -126,25 +129,6 @@
       text-decoration: underline;
     }
 
-    /* Custom Positioning */
-    .motionq-profile {
-      display: block;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .row-of-profiles {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      width: 100%;
-    }
-
-    .employee-row {
-      flex: 0 0 auto;
-      display: flex;
-      justify-content: center;
-    }
   </style>
 </head>
 <body>
@@ -152,12 +136,11 @@
   <!-- Header Section -->
   <header class="header">
     <h1>New York State Police</h1>
-    <h2>Parody RP</h2> <!-- Subheader -->
+    <h2>Parody RP</h2>
   </header>
 
   <!-- Employee Section -->
   <section class="employee-list">
-    <!-- Administration Section -->
     <h2 class="rank-header">Administration</h2>
     <div class="motionq-profile">
       <div class="employee">
