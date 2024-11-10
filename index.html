@@ -18,14 +18,14 @@
       background-color: #121212;
       color: #ffffff;
       font-family: Arial, sans-serif;
-      overflow-x: hidden; /* Prevent horizontal scrolling */
-      min-height: 100vh; /* Ensure the body height stretches to full viewport height */
-      padding-bottom: 70px; /* Add more space for scrolling */
+      overflow-x: hidden;
+      min-height: 100vh;
+      padding-bottom: 70px;
     }
 
     /* Header Section */
     .header {
-      background-image: url('NYSPHeader.png'); /* Use the correct image */
+      background-image: url('NYSPHeader.png');
       background-size: cover;
       background-position: center;
       height: 250px;
@@ -34,10 +34,9 @@
       justify-content: center;
       color: #ffffff;
       flex-direction: column;
-      position: relative;
       text-align: center;
       filter: brightness(1.2);
-      background-blend-mode: overlay;  /* Ensures image blends better */
+      background-blend-mode: overlay;
     }
 
     .header h1 {
@@ -51,46 +50,43 @@
       margin-top: 10px;
     }
 
-    .header:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 40%; /* Adjust height for fade effect */
-      background: linear-gradient(to top, rgba(18, 18, 18, 1), rgba(18, 18, 18, 0));
-    }
-
     /* Employee Section */
-    .employee-section {
-      padding: 50px 30px 20px;
-    }
-
-    .employee-role {
-      margin-bottom: 40px;
-    }
-
-    .employee-role h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
     .employee-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 50px;
+      padding: 50px 30px 20px;
       margin-bottom: 70px;
     }
 
-    .employee {
-      width: 160px;
+    /* Group Section for Rank */
+    .group-section {
+      margin-bottom: 40px;
+    }
+
+    .group-section h2 {
       text-align: center;
+      color: #b3b3b3;
+      margin-bottom: 20px;
+      font-size: 1.6rem;
+    }
+
+    .row-of-profiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .employee {
       background-color: #1f1f1f;
       border-radius: 10px;
       padding: 25px 15px;
+      text-align: center;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .employee:hover {
+      transform: scale(1.05); /* Hover effect */
     }
 
     .employee img {
@@ -112,22 +108,18 @@
     }
 
     .admin-bubble {
-      background-color: #333;
-      color: #f4f4f4;
-      font-weight: bold;
       padding: 8px 16px;
       border-radius: 20px;
-      margin-top: 10px;
-      font-size: 1rem;
-      display: inline-block;
-      text-align: center;
+      font-weight: bold;
       position: absolute;
       bottom: -20px;
       left: 50%;
       transform: translateX(-50%);
+      font-size: 1rem;
+      display: inline-block;
+      text-align: center;
     }
 
-    /* Specific Role Colors */
     .admin-bubble-administration {
       background-color: #e57373;
     }
@@ -160,14 +152,6 @@
     .footer a:hover {
       text-decoration: underline;
     }
-
-    /* Media Query for Responsiveness */
-    @media (max-width: 768px) {
-      .employee-list {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
   </style>
 </head>
 <body>
@@ -179,47 +163,49 @@
   </header>
 
   <!-- Employee Section -->
-  <section class="employee-section">
-
-    <!-- Administration -->
-    <div class="employee-role administration">
+  <section class="employee-list">
+    <div class="group-section">
       <h2>Administration</h2>
-      <div class="employee-list">
+      <div class="row-of-profiles">
         <div class="employee">
           <img src="NYSPHS.png" alt="error">
           <h3>N. Grant</h3>
           <p>Superintendent</p>
           <div class="admin-bubble admin-bubble-administration">Administration</div>
         </div>
-        <!-- Add more profiles here -->
+        <div class="employee">
+          <img src="NYSPHS.png" alt="error">
+          <h3>J. Anderson</h3>
+          <p>First Deputy Superintendent</p>
+          <div class="admin-bubble admin-bubble-administration">Administration</div>
+        </div>
+        <!-- Add more profiles -->
       </div>
     </div>
 
-    <!-- Command -->
-    <div class="employee-role command">
+    <div class="group-section">
       <h2>Command</h2>
-      <div class="employee-list">
+      <div class="row-of-profiles">
         <div class="employee">
           <img src="NYSPHS.png" alt="error">
           <h3>C. Mitchell</h3>
           <p>Major</p>
           <div class="admin-bubble admin-bubble-command">Command</div>
         </div>
-        <!-- Add more profiles here -->
+        <!-- Add more profiles -->
       </div>
     </div>
 
-    <!-- Supervisor -->
-    <div class="employee-role supervisor">
+    <div class="group-section">
       <h2>Supervisor</h2>
-      <div class="employee-list">
+      <div class="row-of-profiles">
         <div class="employee">
           <img src="NYSPHS.png" alt="error">
-          <h3>A. Thompson</h3>
-          <p>Supervisor</p>
+          <h3>D. Sullivan</h3>
+          <p>Lieutenant</p>
           <div class="admin-bubble admin-bubble-supervisor">Supervisor</div>
         </div>
-        <!-- Add more profiles here -->
+        <!-- Add more profiles -->
       </div>
     </div>
 
