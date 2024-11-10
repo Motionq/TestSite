@@ -107,8 +107,12 @@
 
     .row-of-profiles {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       width: 100%;
+    }
+
+    .employee-row {
+      width: 32%;
     }
   </style>
 </head>
@@ -122,25 +126,33 @@
   <!-- Employee Section -->
   <section class="employee-list">
     <div class="motionq-profile">
-      <img src="MotionqSpooky.png" alt="Motionq"> <!-- Replace with employee's photo -->
-      <h3>Motionq</h3>
-      <p>NYSP | Superintendent</p>
+      <div class="employee">
+        <img src="MotionqSpooky.png" alt="Motionq"> <!-- Replace with employee's photo -->
+        <h3>Motionq</h3>
+        <p>NYSP | Superintendent</p>
+      </div>
     </div>
     <div class="row-of-profiles">
-      <div class="employee">
-        <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
-        <h3>TBD</h3>
-        <p>NYSP | First Deputy Superintendent</p>
+      <div class="employee-row">
+        <div class="employee">
+          <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
+          <h3>TBD</h3>
+          <p>NYSP | First Deputy Superintendent</p>
+        </div>
       </div>
-      <div class="employee">
-        <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
-        <h3>TBD</h3>
-        <p>NYSP | First Deputy Superintendent</p>
+      <div class="employee-row">
+        <div class="employee">
+          <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
+          <h3>TBD</h3>
+          <p>NYSP | First Deputy Superintendent</p>
+        </div>
       </div>
-      <div class="employee">
-        <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
-        <h3>TBD</h3>
-        <p>NYSP | First Deputy Superintendent</p>
+      <div class="employee-row">
+        <div class="employee">
+          <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
+          <h3>TBD</h3>
+          <p>NYSP | First Deputy Superintendent</p>
+        </div>
       </div>
     </div>
   </section>
