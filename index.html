@@ -75,7 +75,6 @@
       border-radius: 10px;
       padding: 15px;  /* Reduced padding */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s;
     }
 
     .employee img {
@@ -96,11 +95,16 @@
       color: #b3b3b3;
     }
 
-    .employee p.admin {
-      color: #f4f4f4; /* Lighter color for contrast */
-      font-weight: bold; /* Make the text bold */
-      margin: 5px 0; /* Add spacing above and below */
-      font-size: 1.1rem; /* Slightly larger than title */
+    .admin-bubble {
+      background-color: #f4f4f4;
+      color: #121212;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 20px;
+      margin-top: 10px;
+      font-size: 1rem;
+      display: inline-block;
+      text-align: center;
     }
 
     /* Footer Section */
@@ -157,35 +161,35 @@
 <section class="employee-list">
   <div class="motionq-profile">
     <div class="employee">
-      <img src="MotionqSpooky.png" alt="Motionq"> <!-- Replace with employee's photo -->
+      <img src="MotionqSpooky.png" alt="Motionq">
       <h3>N. Grant</h3>
-      <p class="admin">Administration</p> <!-- Added "Administration" -->
       <p>Superintendent</p>
+      <div class="admin-bubble">Administration</div> <!-- Separate bubble for Administration -->
     </div>
   </div>
   <div class="row-of-profiles">
     <div class="employee-row">
       <div class="employee">
-        <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
+        <img src="TBD.png" alt="TBD">
         <h3>TBD</h3>
-        <p class="admin">Administration</p> <!-- Added "Administration" -->
         <p>First Deputy Superintendent</p>
+        <div class="admin-bubble">Administration</div> <!-- Separate bubble for Administration -->
       </div>
     </div>
     <div class="employee-row">
       <div class="employee">
-        <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
+        <img src="TBD.png" alt="TBD">
         <h3>TBD</h3>
-        <p class="admin">Administration</p> <!-- Added "Administration" -->
         <p>Deputy Superintendent</p>
+        <div class="admin-bubble">Administration</div> <!-- Separate bubble for Administration -->
       </div>
     </div>
     <div class="employee-row">
       <div class="employee">
-        <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
+        <img src="TBD.png" alt="TBD">
         <h3>TBD</h3>
-        <p class="admin">Administration</p> <!-- Added "Administration" -->
         <p>Assistant Deputy Superintendent</p>
+        <div class="admin-bubble">Administration</div> <!-- Separate bubble for Administration -->
       </div>
     </div>
   </div>
