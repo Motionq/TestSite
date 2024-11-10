@@ -20,17 +20,16 @@
       font-family: Arial, sans-serif;
     }
 
-    /* Tab Above Header */
-    .tab {
-      background-color: #333;
-      height: 20px;
-      width: 100%;
-      margin-bottom: 10px;
+    /* Scrollable Page */
+    html, body {
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
 
     /* Header Section */
     .header {
-      background-image: url('NYSPHeader.jpg'); 
+      background-image: url('NYSPHeader.png'); /* Use the correct image */
       background-size: cover;
       background-position: center;
       height: 250px;
@@ -38,31 +37,38 @@
       align-items: center;
       justify-content: center;
       color: #ffffff;
-      flex-direction: column;
+      flex-direction: column; /* Stacks the header and subheader */
       position: relative;
     }
 
-    .header::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
-    }
-
     .header h1 {
-      font-size: 3rem;
-      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
-      z-index: 1;
+      font-size: 2.5rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
     }
 
     .header h2 {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       color: #b3b3b3;
       margin-top: 10px;
-      z-index: 1;
+    }
+
+    /* Tab Section */
+    .tab {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    .tab a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px;
+    }
+
+    .tab a:hover {
+      background-color: #555;
     }
 
     /* Employee Section */
@@ -70,12 +76,12 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 40px 30px 10px;  /* More padding below header */
+      padding: 20px 30px 50px;  /* Increased padding at the bottom */
       gap: 20px;
     }
 
     .employee {
-      width: 160px;  
+      width: 160px;
       text-align: center;
       background-color: #1f1f1f;
       border-radius: 10px;
@@ -89,8 +95,8 @@
     }
 
     .employee img {
-      width: 80px;  
-      height: 80px;  
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 10px;
@@ -150,20 +156,24 @@
 </head>
 <body>
 
-  <!-- Tab Above Header -->
-  <div class="tab"></div>
+  <!-- Tab Section -->
+  <div class="tab">
+    <a href="#">Tab 1</a>
+    <a href="#">Tab 2</a>
+    <a href="#">Tab 3</a>
+  </div>
 
   <!-- Header Section -->
   <header class="header">
     <h1>New York State Police</h1>
-    <h2>Parody RP</h2>
+    <h2>Parody RP</h2> <!-- Subheader -->
   </header>
 
   <!-- Employee Section -->
   <section class="employee-list">
     <div class="motionq-profile">
       <div class="employee">
-        <img src="MotionqSpooky.png" alt="Motionq">
+        <img src="MotionqSpooky.png" alt="Motionq"> <!-- Replace with employee's photo -->
         <h3>N. Grant</h3>
         <p>Superintendent</p>
       </div>
@@ -171,21 +181,21 @@
     <div class="row-of-profiles">
       <div class="employee-row">
         <div class="employee">
-          <img src="TBD.png" alt="TBD">
+          <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
           <h3>TBD</h3>
           <p>First Deputy Superintendent</p>
         </div>
       </div>
       <div class="employee-row">
         <div class="employee">
-          <img src="TBD.png" alt="TBD">
+          <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
           <h3>TBD</h3>
           <p>Deputy Superintendent</p>
         </div>
       </div>
       <div class="employee-row">
         <div class="employee">
-          <img src="TBD.png" alt="TBD">
+          <img src="TBD.png" alt="TBD"> <!-- Replace with employee's photo -->
           <h3>TBD</h3>
           <p>Assistant Deputy Superintendent</p>
         </div>
