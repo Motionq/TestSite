@@ -20,13 +20,6 @@
       font-family: Arial, sans-serif;
     }
 
-    /* Scrollable Page */
-    html, body {
-      height: 100%;
-      overflow-x: hidden;
-      overflow-y: auto;
-    }
-
     /* Header Section */
     .header {
       background-image: url('NYSPHeader.png'); /* Use the correct image */
@@ -37,8 +30,13 @@
       align-items: center;
       justify-content: center;
       color: #ffffff;
-      flex-direction: column; /* Stacks the header and subheader */
+      flex-direction: column;
       position: relative;
+      text-align: center;
+      filter: brightness(1.2);
+      transform: scale(1.1);
+      transition: transform 0.5s ease-in-out;
+      background-blend-mode: overlay;  /* Ensures image blends better */
     }
 
     .header h1 {
@@ -52,23 +50,18 @@
       margin-top: 10px;
     }
 
-    /* Tab Section */
-    .tab {
-      background-color: #333;
-      padding: 10px;
-      text-align: center;
-      font-size: 1.2rem;
-      color: #fff;
+    .header:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 40%; /* Adjust height for fade effect */
+      background: linear-gradient(to top, rgba(18, 18, 18, 1), rgba(18, 18, 18, 0));
     }
 
-    .tab a {
-      text-decoration: none;
-      color: #fff;
-      padding: 10px;
-    }
-
-    .tab a:hover {
-      background-color: #555;
+    .header:hover {
+      transform: scale(1);
     }
 
     /* Employee Section */
@@ -76,16 +69,16 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 20px 30px 50px;  /* Increased padding at the bottom */
+      padding: 20px 30px 10px;  /* Reduced padding */
       gap: 20px;
     }
 
     .employee {
-      width: 160px;
+      width: 160px;  /* Smaller width */
       text-align: center;
       background-color: #1f1f1f;
       border-radius: 10px;
-      padding: 15px;
+      padding: 15px;  /* Reduced padding */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s;
     }
@@ -95,15 +88,15 @@
     }
 
     .employee img {
-      width: 80px;
-      height: 80px;
+      width: 80px;  /* Smaller image */
+      height: 80px;  /* Smaller image */
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 10px;
     }
 
     .employee h3 {
-      font-size: 1.1rem;
+      font-size: 1.1rem;  /* Smaller font size */
       margin: 10px 0 5px;
     }
 
@@ -155,13 +148,6 @@
   </style>
 </head>
 <body>
-
-  <!-- Tab Section -->
-  <div class="tab">
-    <a href="#">Tab 1</a>
-    <a href="#">Tab 2</a>
-    <a href="#">Tab 3</a>
-  </div>
 
   <!-- Header Section -->
   <header class="header">
