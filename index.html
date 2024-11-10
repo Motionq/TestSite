@@ -48,11 +48,6 @@
       background-color: #444;
     }
 
-    /* Vertical Separator */
-    .navbar a:not(:last-child) {
-      border-right: 1px solid #444;
-    }
-
     /* Dropdown */
     .dropdown {
       position: relative;
@@ -74,27 +69,9 @@
       overflow-y: auto;
     }
 
+    /* Show dropdown when hovering over the parent */
     .dropdown:hover .dropdown-content {
       display: block;
-    }
-
-    .dropdown-content a {
-      padding: 10px;
-      font-size: 0.9rem;
-      border-radius: 4px;
-      margin-bottom: 5px;
-      transition: background-color 0.3s;
-      display: block;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #444;
-    }
-
-    .dropdown-content {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      grid-gap: 10px;
     }
 
     /* Header Section */
@@ -197,16 +174,16 @@
 
   <!-- Top Navigation Bar -->
   <nav class="navbar">
-    <a href="#"><i class="fa fa-home"></i> Home</a>
+    <a href="#">Home</a>
     <div class="dropdown">
-      <a href="#"><i class="fa fa-building"></i> Departments</a>
+      <a href="#">Departments</a>
       <div class="dropdown-content">
         <a href="#">Dutchess County Sheriff's Office</a>
         <a href="#">Poughkeepsie Police Department</a>
         <a href="#">New York State Police</a>
       </div>
     </div>
-    <a href="#"><i class="fa fa-life-ring"></i> Support</a>
+    <a href="#">Support</a>
   </nav>
 
   <!-- Header Section -->
